@@ -1,0 +1,33 @@
+{
+  "name": "speak-my-thought",
+  "version": "1.0.0",
+  "description": "An MCP server that turns real experience into clear communication, code, and design guidance",
+  "main": "dist/src/index.js",
+  "bin": {
+    "speak-my-thought": "dist/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://localhost:26831/lelea2/speak-my-thought"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "openai": "^7.51.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
